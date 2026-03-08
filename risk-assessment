@@ -8,10 +8,11 @@ to evaluate threats to sensitive financial systems and recommend mitigation stra
 
 ## Risk Assessment Overview
 
-This section evaluates potential security risks within the FinSecure infrastructure based on the system architecture, operational practices,
+This document evaluates many but not all potential security risks within the FinSecure infrastructure based on the system architecture, operational practices,
 and data handling procedures described in the project scenario. The objective of this assessment is to identify weaknesses that could allow unauthorized
 access to sensitive financial systems or disrupt business operations. Each identified risk is evaluated based on its likelihood of occurrence and potential
-impact on the organization. The results of this assessment help prioritize security improvements and guide the implementation of appropriate mitigation strategies.
+impact on the organization. Each risk will also have a provided mitigation to eliminate it. The results of this assessment help prioritize security improvements
+and guide the implementation of appropriate mitigation strategies.
 
 ---
 
@@ -20,7 +21,8 @@ impact on the organization. The results of this assessment help prioritize secur
 The risk assessment was conducted by reviewing the organization’s network architecture, data storage practices, remote access configuration, and operational security
 controls. Potential risks were identified by analyzing areas where sensitive data is transmitted, stored, or accessed by internal and remote users. Known weaknesses
 associated with outdated protocols, insecure configurations, and insufficient monitoring capabilities were also considered during the evaluation process. Each identified
-risk was then analyzed to determine its likelihood of exploitation and the potential impact to the organization if the vulnerability were successfully exploited.
+risk was then analyzed to determine its likelihood of exploitation and the potential impact to the organization if the vulnerability were successfully exploited. Then
+a mitigation that would eliminate the risk or drastrically reduce its likelihood or impact on the organization is proposed.
 
 ---
 
