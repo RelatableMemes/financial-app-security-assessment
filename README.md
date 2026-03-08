@@ -7,7 +7,7 @@ The assessment identifies potential threats, evaluates risk levels, and proposes
 
 ## System Architecture
 
-![Architecture Diagram](Architecture-Diagram.drawio.png)
+![Architecture Diagram](architecture-diagram.drawio.png)
 
 ## Objectives
 
