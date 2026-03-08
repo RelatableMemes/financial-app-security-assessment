@@ -1,7 +1,48 @@
 # Risk Assessment
+
 This document identifies potential security risks within the FinSecure infrastructure based on the system architecture,
 operational practices, and data protection processes described in the project scenario. The goal of this assessment is
 to evaluate threats to sensitive financial systems and recommend mitigation strategies to reduce organizational risk.
+
+---
+
+## Risk Assessment Overview
+
+This section evaluates potential security risks within the FinSecure infrastructure based on the system architecture, operational practices,
+and data handling procedures described in the project scenario. The objective of this assessment is to identify weaknesses that could allow unauthorized
+access to sensitive financial systems or disrupt business operations. Each identified risk is evaluated based on its likelihood of occurrence and potential
+impact on the organization. The results of this assessment help prioritize security improvements and guide the implementation of appropriate mitigation strategies.
+
+---
+
+## Assessment Methodology
+
+The risk assessment was conducted by reviewing the organization’s network architecture, data storage practices, remote access configuration, and operational security
+controls. Potential risks were identified by analyzing areas where sensitive data is transmitted, stored, or accessed by internal and remote users. Known weaknesses
+associated with outdated protocols, insecure configurations, and insufficient monitoring capabilities were also considered during the evaluation process. Each identified
+risk was then analyzed to determine its likelihood of exploitation and the potential impact to the organization if the vulnerability were successfully exploited.
+
+---
+
+## Risk Rating Criteria
+
+Risks identified in this assessment were evaluated using two primary factors: likelihood and impact.
+**Likelihood** refers to the probability that a threat could exploit a vulnerability within the system environment.
+**Impact** refers to the potential consequences to the organization if the vulnerability were successfully exploited.
+Risk levels were categorized using the following criteria:
+
+**Low**  
+Unlikely to occur and would result in minimal operational or security impact.
+
+**Medium**  
+Possible to occur and could result in moderate disruption or exposure of non-critical systems.
+
+**High**  
+Likely to occur or could result in significant compromise of sensitive systems, financial data, or administrative access.
+
+---
+
+## Identified Security Risks
 
 ## Risk 1: Use of Legacy File Transfer Protocol for Payroll Data
 
@@ -101,6 +142,8 @@ RDP access should be restricted to authorized systems and protected using strong
 controls should include multi factor authentication, network level authentication, and limiting RDP access
 through firewall rules or VPN connections. Administrative access should also be logged and monitored for suspicious activity.
 
+---
+
 ## Risk Summary Table
 
 | Risk | Likelihood | Impact | Priority |
@@ -112,7 +155,17 @@ through firewall rules or VPN connections. Administrative access should also be 
 | Lack of Centralized Monitoring      | High   | Medium | High |
 | Unsecured RDP Administrative Access | Medium | High   | Critical |
 
-#Risk Assessment Summary
-The FinSecure infrastructure contains several security weaknesses related to outdated protocols, insufficient encryption, network configuration issues, and limited monitoring capabilities.
-Addressing these vulnerabilities through stronger encryption standards, improved access controls, secure network configurations, and centralized monitoring would significantly improve the
-organization’s security posture and reduce the risk of data compromise.
+---
+
+## Risk Assessment Conclusion
+
+The risk assessment identified several security weaknesses related to outdated communication protocols, insufficient encryption practices, insecure remote access configurations,
+and limited monitoring capabilities within the FinSecure infrastructure. The most critical risks involve the protection of sensitive financial data and administrative access to
+internal systems. If exploited, these vulnerabilities could allow attackers to gain unauthorized access to confidential information, compromise internal systems, or disrupt business
+operations. Implementing stronger encryption standards, improving access control mechanisms, securing remote access services, and deploying centralized monitoring capabilities would
+
+---
+
+
+significantly reduce the organization’s overall risk exposure. The next phase of the assessment focuses on threat modeling to evaluate potential attackers, attack vectors,
+and likely attack paths within the environment.
