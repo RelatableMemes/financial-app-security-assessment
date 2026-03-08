@@ -1,15 +1,25 @@
 # Risk Assessment
+This document identifies potential security risks within the FinSecure infrastructure based on the system architecture,
+operational practices, and data protection processes described in the project scenario. The goal of this assessment is
+to evaluate threats to sensitive financial systems and recommend mitigation strategies to reduce organizational risk.
 
-## Risk 1: Unauthorized Access to Customer Financial Data
+## Risk 1: Use of Legacy File Transfer Protocol for Payroll Data
 
 Threat: 
-
+The Human Resources and Finance departments exchange payroll data using an internal FTP server that operates with legacy file transer protocols.
+FTP does not encrypt transmitted data, which means sensitive payroll infomration could protentially be intercepted if an attacker gains access to the internal network.
 
 Likelihood:
+Medium. While the server operates internally, attackers who gain access to the network through compromised credentials,
+malware, or an insider threat could intercept FTP traffic.
 
 Impact:
+High. Payroll data contains highly sensitive employee information such as salaries, personal identifiers, and financials records.
+Exposure of this information could result in privacy violations, regulatory issues, and reputaional damage.
 
 Mitigation:
+Replace FTP with a secure file transfer protocol such as SFTP or FTPS. Enforce encrypted transmission of sensitive data
+and restrict file transfer access to authorized systems only. 
 
 ## Risk 2:
 
@@ -21,4 +31,32 @@ Impact:
 
 Mitigation:
 
+## Risk 3:
 
+Threat:
+
+Likelihood:
+
+Impact:
+
+Mitigation:
+
+## Risk 4:
+
+Threat:
+
+Likelihood:
+
+Impact:
+
+Mitigation:
+
+## Risk 5:
+
+Threat:
+
+Likelihood:
+
+Impact:
+
+Mitigation:
