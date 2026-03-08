@@ -4,7 +4,7 @@ This section identifies potential attack vectors within the provided network arc
 
 ---
 
-## Attack 1:
+## Attack 1: Remote Desktop Protocol (RDP) Without Authentication
 
 Explaination:
 
@@ -12,7 +12,7 @@ Mitigation:
 
 ---
 
-## Attack 2:
+## Attack 2: Flat Network Architecture
 
 Explaination:
 
@@ -20,7 +20,7 @@ Mitigation:
 
 ---
 
-## Attack 3:
+## Attack 3: Unencrypted Data Transmission
 
 Explaination:
 
@@ -28,7 +28,7 @@ Mitigation:
 
 ---
 
-## Attack 4:
+## Attack 4: Single Point of Failure in Infrastructure
 
 Explaination:
 
@@ -36,7 +36,7 @@ Mitigation:
 
 ---
 
-## Attack 5:
+## Attack 5: Insufficient Monitoring and Logging
 
 Explaination:
 
@@ -44,7 +44,7 @@ Mitigation:
 
 ---
 
-## Attack 6:
+## Attack 6: Weak Access Control Policies
 
 Explaination:
 
