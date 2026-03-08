@@ -82,7 +82,7 @@ Medium to high. Delayed detection of malicious activity increased the potential 
 Mitigation:
 Implement centralized logging and monitoring using a Security Information and Event Management (SIEM) system. Aggregate logs from servers, network devices, and endpoints to enable real time monitoring and alerting.
 
-##Risk Assessment Summary
+#Risk Assessment Summary
 The FinSecure infrastructure contains several security weaknesses related to outdated protocols, insufficient encryption, network configuration issues, and limited monitoring capabilities.
 Addressing these vulnerabilities through stronger encryption standards, improved access controls, secure network configurations, and centralized monitoring would significantly improve the
 organization’s security posture and reduce the risk of data compromise.
