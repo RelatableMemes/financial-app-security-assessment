@@ -82,6 +82,25 @@ Medium to high. Delayed detection of malicious activity increased the potential 
 Mitigation:
 Implement centralized logging and monitoring using a Security Information and Event Management (SIEM) system. Aggregate logs from servers, network devices, and endpoints to enable real time monitoring and alerting.
 
+## Risk 6: Unsecured Remote Desktop Protocol (RDP) Access
+
+Threat: System administrators manage virtual machines on the internal network using RDP. If RDP access is not properly secured with strong authentication controls,
+attackers could attempt to gain unauthorized access to administrative systems.
+
+Likelihood:
+Medium to high. RDP services are frequently targetted by attackers through credential guessing, brute force attacks, and exploitation of exposed services.
+If administrative systems rely only on username and passwrod authenticiation, attackers may eventually gain access through compromised credentials.
+
+Impact:
+High. If an attacker successfully gains access to a system through RDP, they could obtain administrative
+privileges, access sensitive systems, install milicious software, or move laterally across the network.
+This could lead to full compromose of the organizations infrastructure. 
+
+Mitigation:
+RDP access should be restricted to authorized systems and protected using strong security controls. These
+controls should include multi factor authentication, network level authentication, and limiting RDP access
+through firewall rules or VPN connections. Administrative access should also be logged and monitored for suspicious activity.
+
 #Risk Assessment Summary
 The FinSecure infrastructure contains several security weaknesses related to outdated protocols, insufficient encryption, network configuration issues, and limited monitoring capabilities.
 Addressing these vulnerabilities through stronger encryption standards, improved access controls, secure network configurations, and centralized monitoring would significantly improve the
