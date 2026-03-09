@@ -6,17 +6,26 @@ This section identifies potential attack vectors within the provided network arc
 
 ## Attack 1: Remote Desktop Protocol (RDP) Without Authentication
 
-Explaination:
+Explaination: 
+The architecture indicates that RDP access is enabled without any strong authentication controls. An attacker scanning the internet could easily identify exposed RDP services and attempt to connect. 
+Without proper authentication or access restrictions, an attacker could gain direct remote access to internal systems. This access could be used to execute commands, install malware, steal sensitive data,
+or pivot deeper into the internal network.
 
 Mitigation:
+Require strong authentication for all RDP connections, including multi factor authentication (MFA). Restrict RDP access to authorized secure systems only. RDP access must pass through a VPN or strict firewalls so that only 
+authorized IP addresses can connect. Additionally, disable RDP where it is not needed and monitor all access logs for suspicious activity.
 
 ---
 
 ## Attack 2: Flat Network Architecture
 
 Explaination:
+The network architecture appears to lack proper segmentation between internal systems. They are arranged in a flat network and in a flat network gaining access to one system means an attacker could easily move laterally
+across the entire network. This greatly increases the potential impact of a single compromised system because critical servers, databases, and internal resources are more than likely reachable on a flat network.
 
 Mitigation:
+Implement network segmentation via VLANs or internal firewalls. Separate critical systems such as database and application servers into their own different security zones. 
+Access to one system should not allow access to all other systems. Enforce least privilege network access controls to limit lateral movement opportunities for attackers.
 
 ---
 
