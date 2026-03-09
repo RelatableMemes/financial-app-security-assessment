@@ -7,7 +7,7 @@ This section identifies potential attack vectors within the provided network arc
 ## Attack 1: Remote Desktop Protocol (RDP) Without Authentication
 
 Explaination: 
-The architecture indicates that RDP access is enabled without any strong authentication controls. An attacker scanning the internet could easily identify exposed RDP services and attempt to connect. 
+The architecture shows that RDP access is enabled without any strong authentication controls. An attacker scanning the internet could easily identify exposed RDP services and attempt to connect. 
 Without proper authentication or access restrictions, an attacker could gain direct remote access to internal systems. This access could be used to execute commands, install malware, steal sensitive data,
 or pivot deeper into the internal network.
 
@@ -20,7 +20,7 @@ authorized IP addresses can connect. Additionally, disable RDP where it is not n
 ## Attack 2: Flat Network Architecture
 
 Explaination:
-The network architecture appears to lack proper segmentation between internal systems. They are arranged in a flat network and in a flat network gaining access to one system means an attacker could easily move laterally
+The network architecture has no proper segmentation between internal systems. They are arranged in a flat network and in a flat network gaining access to one system means an attacker could easily move laterally
 across the entire network. This greatly increases the potential impact of a single compromised system because critical servers, databases, and internal resources are more than likely reachable on a flat network.
 
 Mitigation:
@@ -31,32 +31,45 @@ Access to one system should not allow access to all other systems. Enforce least
 
 ## Attack 3: Unencrypted Data Transmission
 
-Explaination:
+Explaination: Sensitive data may be sent across the network without encryption. Attackers can intercept this data and view the information in plaintext. This information could be credentials, financial information, or
+customer data. All of this can be obtained through very simple packet sniffing techniques that many people with limited knowledge can use. 
 
 Mitigation:
+Ensure all traffic is encrypted. When tranferring files on the network use SFTP or FTPS and when sending information to third parties, use HTTPS with TLS 1.2 or TLS 1.3. Enforce encrypted communications between servers,
+applications, and databases.
 
 ---
 
 ## Attack 4: Single Point of Failure in Infrastructure
 
 Explaination:
+The architecture appears to have zero redundancy. If any server or network device goes down, then it could disrupt business operations. This could be due to hardware failure or the critical infrastructure is targeted by 
+an attacker. 
 
 Mitigation:
+Introduce redundancy and high availability for critical systems. Load balancers, redundant servers, and failover mechanisms can ensure continuity of business operations even if one component fails or become compromised.
 
 ---
 
 ## Attack 5: Insufficient Monitoring and Logging
 
 Explaination:
+The architecture does not use any centralized logging or security monitoring systems. All alerts from antivirus applications and all logs remain locally on each individual system. Without proper monitoring, malicious actors
+can remain hidden on networks and systems for extended periods of time increasing the amount of damage they are capable of causing. 
 
 Mitigation:
+Implement centralized logging and monitoring systems such as a Security Information and Event Management (SIEM) system. Enable logging on all critical systems and review the logs regularly to detect any suspicious behavior. 
 
 ---
 
 ## Attack 6: Weak Access Control Policies
 
 Explaination:
+The architecture shows that internal systems lack strong access control policies. Administrators only use a username and password to login to critical systems and there is no mention of employees having limited access to systems.
+Without role based access controls and proper identity management, users may have excessive privileges that can be abused intentionally or unintentionally.
 
 Mitigation:
+Enforce strong access controls such as multi factor authentication and role based access controls. Additionally follow least privilege and ensure employees only have as much access as they require to perform their jobs. Regular
+audits must be performed to ensure there is no privilege escalation or no employee has any privileges that they should not have. 
 
 ---
