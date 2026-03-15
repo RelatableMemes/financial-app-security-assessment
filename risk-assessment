@@ -167,7 +167,3 @@ internal systems. If exploited, these vulnerabilities could allow attackers to g
 operations. Implementing stronger encryption standards, improving access control mechanisms, securing remote access services, and deploying centralized monitoring capabilities would
 
 ---
-
-
-significantly reduce the organization’s overall risk exposure. The next phase of the assessment focuses on threat modeling to evaluate potential attackers, attack vectors,
-and likely attack paths within the environment.
