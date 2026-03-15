@@ -42,10 +42,24 @@ if logs were stored locally on individual systems.
 
 ## Security Control 5: Strong Identity and Access Management Policies
 
-Explaination:
+Explaination: Access to internal systems should follow the principle of least privilege. Employees and administrators should only have access to the resources required to perform their job functions. Role based access control (RBAC)
+should be implemented to manage user permissions across systems.
+
+Access to internal systems should follow the principle of least privilege. Employees and administrators should only have access to the resources required to perform their job functions. Role based access control (RBAC) should be
+implemented to manage user permissions across systems.
+
+Multi factor authentication should be required for administrative accounts and for any system that provides access to sensitive financial or customer information. Regular access audits should be conducted to ensure that users do not
+maintain unnecessary privileges.
 
 ---
 
 ## Security Control 6: Infrastructure Redundancy and High Availability
 
-Explaination:
+Explaination: Critical infrastructure components should include redundancy to prevent service outages caused by hardware failures or targeted attacks. Redundant network gateways, firewalls, switches, and application servers should be
+deployed to provide failover capabilities.
+
+High availability that uses load balancers and redundant systems ensures business operations can continue even if a critical component fails or a targeted attack occurs. Implementing redundancy improves system resilience and reduces
+the risk of downtime.
+
+---
+
