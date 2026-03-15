@@ -32,7 +32,11 @@ to a system or network traffic.
 
 ## Security Control 4: Centralized Security Monitoring and Log Management
 
-Explaination:
+Explaination: All systems within the infrastructure should forward logs to a centralized security monitoring platform such as a Security Information and Event Management (SIEM) system. Logs should be collected from servers, network
+devices, applications, and endpoint security tools.
+
+Centralized monitoring enables security teams to detect suspicious activity across the network in real time. Using logs from multiple systems allows analysts to identify patterns of malicious activity that might otherwise go unnoticed
+if logs were stored locally on individual systems. 
 
 ---
 
