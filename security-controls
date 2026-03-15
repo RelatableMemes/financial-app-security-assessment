@@ -22,7 +22,11 @@ Internal firewall policies can enforce strict communication rules between segmen
 
 ## Security Control 3: Encryption for Data in Transit and Data at Rest
 
-Explaination:
+Explaination: Sensitive data should be protected with strong encryption while it is being transmitted and while it is at rest. All network communications involving financial information or customer data should use secure encryption
+protocols such as TLS 1.2 and TLS 1.3. Legacy protocols such as FTP should be replaced with secure alternatives such as SFTP or FTPS.
+
+Additionally, sensitive data stored in databases should be encrypted at rest using modern encryption standards. Securing data with encryption prevents attackers from easily accessing sensitive information even if they do gain access
+to a system or network traffic.
 
 ---
 
