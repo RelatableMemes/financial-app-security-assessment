@@ -12,7 +12,11 @@ significantly more difficult.
 
 ## Security Control 2: Network Segmentation and Internal Firewall Deployment
 
-Explaination:
+Explaination: The internal network architecture should be segmented to prevent unrestricted communication between systems. Virtual Lans (VLANs) and internal firewall rules should be implemented to separate critical systems such as
+application servers, financial databases, file storage sytems, and web interfaces into different security zones. 
+
+Network segmentation prevents attackers from gaining access to one system and moving laterally across the network and gaining access to all of the systems. Attackers who gain access to one would not automatically gain access to another.
+Internal firewall policies can enforce strict communication rules between segments and significantly reduce the potential impact of a breach. 
 
 ---
 
