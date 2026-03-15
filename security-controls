@@ -2,7 +2,11 @@
 
 ## Security Control 1: Secure Remote Administrative Access
 
-Explaination:
+Explaination: Administrative access to internal systems should be restricted and hardened to prevent unauthorized remote access. Remote Desktop Protocol (RDP) access should only be allowed through a VPN connection and restricted to
+authorized administrative systems within a dedicated management subnet. Additionally, RDP must use Multi factor authentication (MFA). Firewall rules should disallow any RDP attempts from the internet.
+
+These controls reduce the risk of attackers gaining administrative access through exposed RDP services or compromised credentials. Requiring a VPN and MFA also adds additional layers of protection that makes unauthorized access 
+significantly more difficult.
 
 ---
 
