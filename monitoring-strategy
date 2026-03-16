@@ -2,7 +2,12 @@
 
 ## Monitoring Strategy 1: Centralized Log Collection and SIEM Monitoring
 
-Explaination:
+Explaination: All systems should send their security logs to a centralized monitoring platform such as a Security Infomration and Event Management (SIEM) system. Logs should be collected from servers, network devices, firewalls,
+end point security tools, authentication services, and VPN gateways.
+
+Centralized logging allows security analysts to monitor activity from across the network at one centralized location. The SIEM system can correlate events from multiple systems to paint a better picture of suspicious
+patterns such as repeated failed login attempts, unusual authentication activities, or unauthorized access attempts. This approach greatly increases the ability of the organization to detect and respond to malicious or suspicious
+activities that it otherwise would have a hard time handling. 
 
 ---
 
