@@ -24,7 +24,7 @@ The purpose of this project is to simulate a real-world security assessment by r
 
 ---
 
-# Scenario Background
+## Scenario Background
 
 FinSecure Corp is a regional financial services organization that manages customer financial transactions, employee records, and internal accounting documentation. The company operates both on-premises systems and remote office resources.
 
@@ -32,7 +32,7 @@ As part of a planned infrastructure expansion, FinSecure is reviewing its data p
 
 ---
 
-# Current Operations
+## Current Operations
 
 Several internal processes are used to exchange and manage sensitive data across the organization.
 
@@ -44,7 +44,7 @@ Several internal processes are used to exchange and manage sensitive data across
 
 ---
 
-# Data Storage Practices
+## Data Storage Practices
 
 The organization stores financial and operational data across several internal systems.
 
@@ -57,7 +57,7 @@ The organization stores financial and operational data across several internal s
 
 ---
 
-# Key Management and Policy Overview
+## Key Management and Policy Overview
 
 - Encryption keys are generated within individual applications and maintained by the respective system owners.
 - Some systems use self-signed certificates that are manually renewed during routine maintenance windows.
@@ -65,7 +65,7 @@ The organization stores financial and operational data across several internal s
 
 ---
 
-# System Architecture Overview
+## System Architecture Overview
 
 FinSecure operates a distributed infrastructure consisting of a corporate network and a centralized data center.
 
@@ -84,7 +84,7 @@ Remote employees connect through a VPN gateway, and network traffic passes throu
 
 ---
 
-# Architecture Diagram
+## Architecture Diagram
 
 The following diagram illustrates the simplified network architecture evaluated in this security assessment.
 
@@ -92,7 +92,7 @@ The following diagram illustrates the simplified network architecture evaluated 
 
 ---
 
-# Operational Environment Summary
+## Operational Environment Summary
 
 ## Monitoring and Detection
 
@@ -135,7 +135,7 @@ The following diagram illustrates the simplified network architecture evaluated 
 
 ---
 
-# Assessment Scope
+## Assessment Scope
 
 The objective of this project is to evaluate the security risks present within FinSecure's infrastructure and recommend improvements to strengthen the organization's security posture.
 
