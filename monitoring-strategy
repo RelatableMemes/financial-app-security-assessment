@@ -13,12 +13,21 @@ activities that it otherwise would have a hard time handling.
 
 ## Monitoring Strategy 2: Network Traffic Monitoring and Indtrusion Detection
 
-Explaination:
+Explaination: Network traffic should be monitored using an intrusion detection or intrustion prevention system located at key locations in the network architecture. These systems analyze network traffic for behaviour that is 
+indicative of malicious activity such as port scanning, suspicious data transfers, or attempts to exploit known vulnerabilities. 
+
+Monitoring network traffic allows the organization to detect attacks that may bypass traditional security controls. Intrusion detection can alert the administrators if an attacker is attempting to move laterally on the network 
+or exfiltrate large amounts of data from the network. Early detection of these activities can be the most major determining factor between successful investigation and response and an unsuccessful investigation and response. 
 
 ---
 
 ## Monitoring Strategy 3: Endpoint and Administrative Activity Monitoring
 
-Explaination:
+Explaination: Critical systems and administrative accounts should be closely monitored for unusual activity. Endpoint detection and response (EDR) tools can monitor system processes, file changes, and user behavior on servers and
+workstations. Administrative acces to systems, particularly through remote management tools such as RDP, should also be logged and monitored.
+
+Monitoring administrative activity helps detect potential compromise of privileged accounts. An attacker with administrative access could find ways to bypass a great amount of security controls in place around the organization so it
+is paramount that all administrative activity is monitored. Alerts should be generated for suspicious actions such as multiple failed login attempts, logins from unusual locations, unexpected privilege changes, or unauthorized software
+installation. Continuous monitoring of endpoint and administrative activity allows an organization to detect insider threats and compromised accounts as soon as logs are reviewed. 
 
 ---
