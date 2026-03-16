@@ -1,5 +1,21 @@
 # Financial Application Security Assessment
 
+## Executive Summary
+This project presents a security assessment of FinSecure network architecture in order to identify potential risk that could afect the confidentiality, integrity, and availability of sensitive financial systems. 
+The assessment analyzes the system architecture, operational practices, and data handling procedures to determine where vulnerabilities may exist within the environment
+
+Several security risks were identified during the assessment. Some of the most significant risks include unsecured administrative access through Remote Desktop Protocol (RDP), a flat network architecture that could allow attackers
+to move laterally between systems, weak encryption practices during data transmission, and the lack of centralized monitoring capabilities. These weakness could allow attackers to gain unauthorized access to internal systems, 
+intercept sensitive data being transmitted on the network, and remain undetected on the network for extended periods of time.
+
+To reduce these risks, several security improvements are recommended. These include implementing stronger authentication controls for administrative access, introducing network segmentation to limit lateral movement, enforcing
+strong encryption standards for data at rest and in transit, deploying centralized logging and monitoring through a SIEM system, and improving identity and access management policies.
+
+Implementing these recommendations would significantly improve the organizations ability to protect its internal network and its sensitive data and detect malicious activity much quicker to reduce the overall security risk within
+its environment.
+
+---
+
 ## Project Overview
 
 This project analyzes the security posture of a fictional financial services organization and evaluates risks within its network architecture, data protection practices, and operational security controls.
